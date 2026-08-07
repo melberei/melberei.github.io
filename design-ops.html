@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design Operations — Marylynne Berei</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Marylynne <span>Berei</span></a>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="https://www.linkedin.com/in/melberei26" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="cs-hero">
+    <div class="wrap">
+      <p class="eyebrow">Design Operations · Wells Fargo</p>
+      <h1>Design Operations: replacing scattered requests with one system of record</h1>
+      <div class="cs-meta">
+        <div><div class="label">Role</div><div class="value">Design Ops Lead</div></div>
+        <div><div class="label">Tools</div><div class="value">Confluence, Jira</div></div>
+        <div><div class="label">Focus</div><div class="value">Intake process, team capacity visibility</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap cs-body">
+      <h2>The challenge</h2>
+      <p>Design requests were coming in through scattered emails, team messages, and hallway conversations, making it nearly impossible to prioritize work or give stakeholders visibility into where their asks stood.</p>
+
+      <h2>The approach</h2>
+      <p>I designed and implemented a centralized design intake form in Confluence that routed submissions directly into our team's Kanban board, replacing ad hoc requests with a single, standardized entry point. Stakeholders could submit structured requests and track their place in the queue, while leadership gained real-time visibility into team capacity, workload, and priorities.</p>
+    </div>
+  </section>
+
+  <section class="cs-mockup-section">
+    <div class="wrap">
+      <p class="eyebrow" style="margin-bottom:8px;">Confluence intake form → Jira board automation</p>
+      <p style="font-size:13px; font-style:italic; color:var(--ink-soft); max-width:640px; margin:0 0 24px;">Confidentiality Notice: Visuals have been recreated using AI to protect confidential information while accurately representing my design work.</p>
+      <div class="wf-mockup">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+  .wf-mockup, .wf-mockup *{ box-sizing:border-box; }
+  .wf-mockup{
+    --wf-red:#D71E28;
+    --wf-red-dark:#A81C1F;
+    --wf-gold:#FFCD41;
+    --wf-black:#1B1B1B;
+    --ink:#2B2B2B;
+    --paper:#F5F3EF;
+    --white:#FFFFFF;
+    --line:#E3DFD6;
+    --muted:#767066;
+
+    background:var(--paper);
+    font-family:'Inter',sans-serif;
+    color:var(--ink);
+    padding:clamp(16px,4vw,40px) clamp(12px,3vw,20px) 60px;
+    max-width:960px;
+    margin:0 auto;
+  }
+  .wf-mockup h1,.wf-mockup h2,.wf-mockup h3{ font-family:'Manrope',sans-serif; margin:0; }
+
+  /* ---------- shared browser chrome ---------- */
+  .wf-mockup .window{
+    background:var(--white);
+    border-radius:10px;
+    box-shadow:0 20px 50px -20px rgba(27,27,27,0.25), 0 0 0 1px var(--line);
+    overflow:hidden;
+    margin-bottom:0;
+  }
+  .wf-mockup .titlebar{
+    display:flex;align-items:center;gap:8px;
+    background:#EDEAE2;padding:8px 12px;
+    border-bottom:1px solid var(--line);
+  }
+  .wf-mockup .dot{width:9px;height:9px;border-radius:50%;background:#D8D2C4;flex-shrink:0;}
+  .wf-mockup .urlbar{
+    flex:1;margin-left:8px;background:var(--white);
+    border:1px solid var(--line);border-radius:6px;
+    padding:5px 10px;font-size:11px;color:var(--muted);
+    overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+    min-width:0;
+  }
+
+  /* ---------- top nav ---------- */
+  .wf-mockup .app-nav{
+    background:var(--wf-red);
+    color:var(--white);
+    padding:10px 16px;
+    display:flex;align-items:center;justify-content:space-between;
+    gap:10px;flex-wrap:wrap;
+  }
+  .wf-mockup .brand{
+    display:flex;align-items:center;gap:8px;
+    font-family:'Manrope',sans-serif;font-weight:800;letter-spacing:.2px;
+    font-size:clamp(13px,3vw,15px);white-space:nowrap;
+    color:var(--white);
+  }
+  .wf-mockup .brand .mark{
+    width:24px;height:24px;border-radius:6px;background:var(--wf-gold);
+    display:flex;align-items:center;justify-content:center;
+    color:var(--wf-red-dark);font-weight:800;font-size:12px;flex-shrink:0;
+  }
+  .wf-mockup .crumbs{font-size:11px;opacity:.85;font-weight:500;color:var(--white);}
+  .wf-mockup .app-subnav{
+    background:#F0EDE6;
+    border-bottom:1px solid var(--line);
+    padding:10px 16px;
+    font-size:12px;color:var(--muted);
+    display:flex;gap:16px;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    white-space:nowrap;
+  }
+  .wf-mockup .app-subnav span{padding-bottom:8px;flex-shrink:0;}
+  .wf-mockup .app-subnav span.active{color:var(--wf-red-dark);font-weight:700;border-bottom:2px solid var(--wf-gold);}
+
+  .wf-mockup .content{padding:clamp(16px,4vw,32px);}
+  .wf-mockup .eyebrow{
+    text-transform:uppercase;font-size:11px;letter-spacing:1.4px;
+    color:var(--wf-red-dark);font-weight:700;margin-bottom:6px;
+  }
+  .wf-mockup .page-title{font-size:clamp(20px,4.5vw,26px);font-weight:800;margin:0 0 4px;}
+  .wf-mockup .page-sub{color:var(--muted);font-size:13px;margin:0 0 24px;line-height:1.5;}
+
+  /* ---------- form ---------- */
+  .wf-mockup .form-grid{
+    display:grid;grid-template-columns:1fr 1fr;gap:16px 20px;
+  }
+  .wf-mockup .field{display:flex;flex-direction:column;gap:6px;min-width:0;}
+  .wf-mockup .field.full{grid-column:1 / -1;}
+  .wf-mockup label{font-size:12.5px;font-weight:700;color:var(--ink);}
+  .wf-mockup label .req{color:var(--wf-red);}
+  .wf-mockup input,
+  .wf-mockup textarea,
+  .wf-mockup select{
+    font-family:'Inter',sans-serif;
+    border:1px solid var(--line);
+    background:#FBFAF7;
+    border-radius:7px;
+    padding:10px 12px;
+    font-size:16px;
+    color:var(--ink);
+    outline:none;
+    width:100%;
+    transition:border-color .15s, box-shadow .15s;
+  }
+  @media (min-width:640px){
+    .wf-mockup input,.wf-mockup textarea,.wf-mockup select{font-size:13.5px;}
+  }
+  .wf-mockup input:focus,
+  .wf-mockup textarea:focus,
+  .wf-mockup select:focus{
+    border-color:var(--wf-gold);
+    box-shadow:0 0 0 3px rgba(255,205,65,.35);
+    background:var(--white);
+  }
+  .wf-mockup textarea{resize:vertical;min-height:80px;}
+  .wf-mockup .priority-row{display:flex;gap:8px;flex-wrap:wrap;}
+  .wf-mockup .chip{
+    border:1px solid var(--line);border-radius:20px;
+    padding:7px 14px;font-size:12.5px;font-weight:600;
+    color:var(--muted);cursor:default;background:var(--white);
+  }
+  .wf-mockup .chip.selected{
+    background:var(--wf-red);border-color:var(--wf-red);color:var(--white);
+  }
+  .wf-mockup .dropzone{
+    border:1.5px dashed var(--line);border-radius:8px;
+    padding:16px;text-align:center;font-size:12.5px;color:var(--muted);
+    background:#FBFAF7;
+  }
+  .wf-mockup .dropzone strong{color:var(--wf-red-dark);}
+  .wf-mockup .form-footer{
+    margin-top:24px;display:flex;justify-content:flex-end;gap:10px;align-items:center;
+    flex-wrap:wrap;
+  }
+  .wf-mockup .hint{font-size:11.5px;color:var(--muted);margin-right:auto;}
+  .wf-mockup .btn-ghost{
+    padding:10px 18px;border-radius:7px;border:1px solid var(--line);
+    background:var(--white);color:var(--ink);font-weight:600;font-size:13px;
+    white-space:nowrap;cursor:pointer;
+  }
+  .wf-mockup .btn-primary{
+    padding:10px 20px;border-radius:7px;border:none;
+    background:var(--wf-red);color:var(--white);font-weight:700;font-size:13px;
+    box-shadow:0 6px 16px -6px rgba(215,30,40,.6);
+    white-space:nowrap;cursor:pointer;
+  }
+
+  /* ---------- connector ---------- */
+  .wf-mockup .connector{
+    display:flex;flex-direction:column;align-items:center;
+    padding:20px 0;text-align:center;
+  }
+  .wf-mockup .connector .track{
+    width:2px;height:48px;
+    background:repeating-linear-gradient(to bottom, var(--wf-red) 0 6px, transparent 6px 12px);
+  }
+  .wf-mockup .connector .card{
+    margin-top:10px;
+    background:var(--white);border:1px solid var(--line);
+    border-left:4px solid var(--wf-gold);
+    border-radius:8px;padding:10px 16px;
+    font-size:clamp(11px,3vw,12px);font-weight:700;color:var(--wf-red-dark);
+    box-shadow:0 8px 20px -10px rgba(27,27,27,.25);
+    display:flex;align-items:center;gap:8px;
+    max-width:90%;
+    text-align:left;
+  }
+  .wf-mockup .connector .card .arrow{
+    width:0;height:0;flex-shrink:0;
+    border-top:5px solid transparent;border-bottom:5px solid transparent;
+    border-left:7px solid var(--wf-red-dark);
+  }
+  .wf-mockup .connector .sub{font-size:11px;color:var(--muted);font-weight:500;margin-top:6px;padding:0 12px;}
+
+  /* ---------- jira board ---------- */
+  .wf-mockup .board-toolbar{
+    padding:14px 16px;border-bottom:1px solid var(--line);
+    display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;
+  }
+  .wf-mockup .board-title{font-size:clamp(15px,3.5vw,18px);font-weight:800;}
+  .wf-mockup .board-meta{font-size:11px;color:var(--muted);}
+  .wf-mockup .board-search{
+    font-size:12px;color:var(--muted);border:1px solid var(--line);
+    border-radius:6px;padding:6px 10px;background:#FBFAF7;
+  }
+
+  .wf-mockup .board{
+    display:flex;
+    gap:12px;
+    padding:16px;
+    background:#F0EDE6;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    scroll-snap-type:x proximity;
+  }
+  .wf-mockup .column{
+    background:#FBFAF7;border-radius:8px;border:1px solid var(--line);
+    padding:10px;min-height:240px;
+    flex:0 0 78%;
+    scroll-snap-align:start;
+  }
+  .wf-mockup .column-head{
+    display:flex;align-items:center;justify-content:space-between;
+    font-size:11px;font-weight:800;letter-spacing:.6px;color:var(--muted);
+    text-transform:uppercase;padding:4px 4px 10px;
+  }
+  .wf-mockup .col-backlog .column-head{color:var(--wf-red-dark);}
+  .wf-mockup .count{
+    background:var(--line);color:var(--ink);
+    font-size:10.5px;font-weight:700;border-radius:10px;
+    padding:1px 7px;
+  }
+  .wf-mockup .col-backlog .count{background:var(--wf-gold);color:var(--wf-red-dark);}
+  .wf-mockup .ticket{
+    background:var(--white);border:1px solid var(--line);
+    border-radius:7px;padding:9px 10px;margin-bottom:9px;
+    font-size:11.5px;box-shadow:0 1px 2px rgba(0,0,0,.04);
+  }
+  .wf-mockup .ticket .id{font-size:10px;color:var(--muted);font-weight:600;margin-bottom:4px;}
+  .wf-mockup .ticket .title{font-weight:600;color:var(--ink);line-height:1.3;margin-bottom:8px;}
+  .wf-mockup .ticket .meta{display:flex;align-items:center;justify-content:space-between;}
+  .wf-mockup .tag{
+    font-size:9.5px;font-weight:700;padding:2px 6px;border-radius:4px;
+    background:#F0EDE6;color:var(--muted);
+  }
+  .wf-mockup .tag.high{background:#FBDCDD;color:var(--wf-red-dark);}
+  .wf-mockup .tag.med{background:#FFF3D2;color:#8A6A00;}
+  .wf-mockup .tag.low{background:#E7F1EA;color:#357A4C;}
+  .wf-mockup .avatar{
+    width:18px;height:18px;border-radius:50%;
+    background:var(--wf-red);color:var(--white);
+    font-size:9px;font-weight:800;flex-shrink:0;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .wf-mockup .ticket.new{
+    border-left:3px solid var(--wf-gold);
+    box-shadow:0 0 0 3px rgba(255,205,65,.35), 0 6px 14px -8px rgba(215,30,40,.4);
+    position:relative;
+  }
+  .wf-mockup .ticket.new::after{
+    content:"just added";
+    position:absolute;top:-9px;right:8px;
+    background:var(--wf-red);color:var(--white);
+    font-size:8.5px;font-weight:800;letter-spacing:.4px;
+    text-transform:uppercase;padding:2px 6px;border-radius:4px;
+  }
+  .wf-mockup .scroll-hint{
+    text-align:center;font-size:10.5px;color:var(--muted);
+    padding:0 16px 14px;display:none;
+  }
+
+  @media (min-width:640px){
+    .wf-mockup .column{flex:0 0 46%;}
+  }
+
+  @media (max-width:639px){
+    .wf-mockup .scroll-hint{display:block;}
+    .wf-mockup .titlebar{padding:7px 10px;}
+    .wf-mockup .urlbar{font-size:10px;}
+    .wf-mockup .crumbs{display:none;}
+    .wf-mockup .form-footer{justify-content:stretch;}
+    .wf-mockup .form-footer .hint{width:100%;margin-bottom:4px;}
+    .wf-mockup .btn-ghost,.wf-mockup .btn-primary{flex:1;text-align:center;}
+  }
+
+  @media (min-width:960px){
+    .wf-mockup .form-grid{grid-template-columns:1fr 1fr;}
+    .wf-mockup .board{
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      overflow-x:visible;
+      padding:20px 24px 28px;
+    }
+    .wf-mockup .column{flex:none;min-height:260px;}
+    .wf-mockup .scroll-hint{display:none;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .wf-mockup *{scroll-behavior:auto !important;}
+  }
+</style>
+
+<div class="window">
+  <div class="titlebar">
+    <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+    <div class="urlbar">wellsfargo.atlassian.net/wiki/spaces/DESIGN/intake</div>
+  </div>
+  <div class="app-nav">
+    <div class="brand"><div class="mark">WF</div>Wells Fargo Confluence</div>
+    <div class="crumbs">Design &amp; Brand Space / Intake Forms</div>
+  </div>
+  <div class="app-subnav">
+    <span>Space overview</span>
+    <span class="active">Design Request Intake</span>
+    <span>Templates</span>
+    <span>Team calendar</span>
+  </div>
+  <div class="content">
+    <div class="eyebrow">Design &amp; Brand Team</div>
+    <h1 class="page-title">Design Request Intake</h1>
+    <p class="page-sub">Submit a request to the Design team. Submitting this form automatically creates a ticket on the Design Requests Jira board.</p>
+
+    <div class="form-grid">
+      <div class="field">
+        <label>Request title <span class="req">*</span></label>
+        <input type="text" value="Refresh homepage hero banner for Q3 promo" readonly="">
+      </div>
+      <div class="field">
+        <label>Requester <span class="req">*</span></label>
+        <input type="text" value="Sarah Chen — Marketing" readonly="">
+      </div>
+      <div class="field full">
+        <label>Priority <span class="req">*</span></label>
+        <div class="priority-row">
+          <div class="chip">Low</div>
+          <div class="chip selected">High</div>
+          <div class="chip">Medium</div>
+          <div class="chip">Urgent</div>
+        </div>
+      </div>
+      <div class="field full">
+        <label>Description <span class="req">*</span></label>
+        <textarea readonly="">Need an updated hero banner for the homepage promoting the Q3 credit card cashback offer. Should follow current brand guidelines, include CTA button, and be ready for both desktop and mobile breakpoints.</textarea>
+      </div>
+      <div class="field">
+        <label>Due date <span class="req">*</span></label>
+        <input type="text" value="August 15, 2026" readonly="">
+      </div>
+      <div class="field">
+        <label>Attachments</label>
+        <div class="dropzone"><strong>Drop files</strong> or click to browse — brief.pdf attached</div>
+      </div>
+    </div>
+
+    <div class="form-footer">
+      <span class="hint">Fields marked * are required</span>
+      <button class="btn-ghost">Save draft</button>
+      <button class="btn-primary">Submit request</button>
+    </div>
+  </div>
+</div>
+
+<div class="connector">
+  <div class="track"></div>
+  <div class="card">Submitted <span class="arrow"></span> ticket auto-created in Jira</div>
+  <div class="sub">Confluence form → Jira automation → Design Requests board</div>
+</div>
+
+<div class="window">
+  <div class="titlebar">
+    <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+    <div class="urlbar">wellsfargo.atlassian.net/jira/software/projects/DES/boards/1</div>
+  </div>
+  <div class="app-nav">
+    <div class="brand"><div class="mark">WF</div>Wells Fargo Jira</div>
+    <div class="crumbs">Design Requests / Board</div>
+  </div>
+  <div class="board-toolbar">
+    <div>
+      <div class="board-title">Design Requests Board</div>
+      <div class="board-meta">Project: DES · 5 columns · updated just now</div>
+    </div>
+    <div class="board-search">Search backlog…</div>
+  </div>
+
+  <div class="board">
+    <div class="column col-backlog">
+      <div class="column-head">Backlog <span class="count">4</span></div>
+      <div class="ticket new">
+        <div class="id">DES-482</div>
+        <div class="title">Refresh homepage hero banner for Q3 promo</div>
+        <div class="meta"><span class="tag high">High</span><span class="avatar">SC</span></div>
+      </div>
+      <div class="ticket">
+        <div class="id">DES-481</div>
+        <div class="title">Update ATM signage template</div>
+        <div class="meta"><span class="tag med">Medium</span><span class="avatar">JR</span></div>
+      </div>
+      <div class="ticket">
+        <div class="id">DES-479</div>
+        <div class="title">New icon set for mobile app</div>
+        <div class="meta"><span class="tag low">Low</span><span class="avatar">TL</span></div>
+      </div>
+      <div class="ticket">
+        <div class="id">DES-477</div>
+        <div class="title">Branch flyer — savings campaign</div>
+        <div class="meta"><span class="tag med">Medium</span><span class="avatar">MK</span></div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="column-head">To Do <span class="count">2</span></div>
+      <div class="ticket">
+        <div class="id">DES-474</div>
+        <div class="title">Email header for card offer</div>
+        <div class="meta"><span class="tag high">High</span><span class="avatar">AL</span></div>
+      </div>
+      <div class="ticket">
+        <div class="id">DES-470</div>
+        <div class="title">Social post templates — August</div>
+        <div class="meta"><span class="tag low">Low</span><span class="avatar">SC</span></div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="column-head">In Progress <span class="count">2</span></div>
+      <div class="ticket">
+        <div class="id">DES-465</div>
+        <div class="title">Redesign online banking login screen</div>
+        <div class="meta"><span class="tag high">High</span><span class="avatar">JR</span></div>
+      </div>
+      <div class="ticket">
+        <div class="id">DES-461</div>
+        <div class="title">Wealth mgmt brochure layout</div>
+        <div class="meta"><span class="tag med">Medium</span><span class="avatar">TL</span></div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="column-head">In Review <span class="count">1</span></div>
+      <div class="ticket">
+        <div class="id">DES-458</div>
+        <div class="title">Branch window decals refresh</div>
+        <div class="meta"><span class="tag med">Medium</span><span class="avatar">MK</span></div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="column-head">Done <span class="count">1</span></div>
+      <div class="ticket">
+        <div class="id">DES-450</div>
+        <div class="title">Q2 annual report cover design</div>
+        <div class="meta"><span class="tag low">Low</span><span class="avatar">AL</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">← swipe to see all columns →</div>
+</div>
+
+</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap cs-body">
+      <div class="pull-tile">
+        <div class="tile-label">Outcome</div>
+        <p>Fewer back-and-forth clarifications, fewer dropped or duplicate requests, and a defensible way to prioritize based on actual bandwidth — not who asked loudest or most recently.</p>
+      </div>
+
+      <h2>Why it mattered</h2>
+      <p>Beyond the immediate process fix, this gave the team a repeatable structure for protecting its own capacity — and gave leadership a clear, data-backed view into what the team could realistically take on.</p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="cs-nav">
+      <a href="merchant-services.html">← Merchant Services</a>
+      <a href="index.html#work">All work →</a>
+    </div>
+  </div>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-cta">
+        <p class="eyebrow">Contact</p>
+        <h3>Let's talk about your next hire.</h3>
+      </div>
+      <ul class="footer-links">
+        <li><a href="https://www.linkedin.com/in/melberei26" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+        <li><a href="mailto:melb122@gmail.com">Email ↗</a></li>
+      </ul>
+    </div>
+    <p class="copyright">© 2026 Marylynne Berei</p>
+  </div>
+</footer>
+
+</body>
+</html>
