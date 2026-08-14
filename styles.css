@@ -507,7 +507,11 @@ footer{
 .cs-body{
   max-width: 720px;
   margin: 0 auto;
-  padding: 56px 0;
+  padding: 56px 32px;
+}
+
+@media (max-width: 480px){
+  .cs-body{ padding: 40px 20px; }
 }
 
 .cs-body h2{
