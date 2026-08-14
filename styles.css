@@ -513,6 +513,26 @@ footer{
 
 .cs-body h2:first-child{ margin-top: 0; }
 
+.highlight-heading{
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 26px;
+  margin: 64px 0 6px;
+}
+
+.highlight-subtitle{
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 16px;
+  line-height: 1.4;
+}
+
+@media (max-width: 640px){
+  .highlight-heading{ margin-top: 48px; font-size: 23px; }
+  .cs-body p{ font-size: 16px; line-height: 1.7; }
+}
+
 .cs-body p{
   font-size: 17px;
   color: var(--ink-soft);
