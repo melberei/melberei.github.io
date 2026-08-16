@@ -543,6 +543,58 @@ footer{
   .cs-body p{ font-size: 16px; line-height: 1.7; }
 }
 
+/* -------------------- Numbered process blocks -------------------- */
+
+.pb-block{
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 24px;
+  margin: 56px 0;
+  padding-top: 40px;
+  border-top: 1px solid var(--hairline);
+}
+
+.pb-block:first-child{
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.pb-num{
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 40px;
+  color: var(--brass-light);
+  line-height: 1;
+}
+
+.pb-content h2{
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0 0 14px;
+}
+
+.pb-content p{
+  font-size: 16px;
+  color: var(--ink-soft);
+  line-height: 1.7;
+  margin: 0 0 16px;
+}
+
+.pb-content p:last-child{ margin-bottom: 0; }
+
+@media (max-width: 640px){
+  .pb-block{
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 40px 0;
+    padding-top: 28px;
+  }
+  .pb-num{ font-size: 30px; }
+}
+
 .cs-body p{
   font-size: 17px;
   color: var(--ink-soft);
