@@ -70,6 +70,7 @@
         <div class="pb-content">
           <h2>Aligning with brand</h2>
           <p>Advisor Gateway had drifted far enough from Wells Fargo's enterprise brand standards that it read as a separate, dated product rather than part of a cohesive suite of tools. Bringing OneWIM back in line with brand meant more than swapping colors and logos — it meant rebuilding component patterns, typography, and interaction states to match current standards, while making sure the result still felt purpose-built for the density and complexity advisors actually work in.</p>
+          <p>That rebuild went beyond the visual layer. Error states, system messaging, inline validation, and contextual help text were all rewritten and restyled as part of the same effort — not left as generic system defaults. Where the legacy experience threw vague, inconsistent error text at advisors, OneWIM's messaging was rebuilt to be specific, actionable, and on-brand: telling an advisor exactly what went wrong and what to do next, in language consistent with how Wells Fargo actually communicates with its own people. Help text and tooltips followed the same standard, giving advisors contextual guidance in the moment rather than sending them hunting through a separate help center.</p>
 
           <p style="font-size:13px; font-style:italic; color:var(--ink-soft); max-width:640px; margin:24px 0 0;">Confidentiality Notice: Visuals have been recreated using AI to protect confidential information while accurately representing my design work.</p>
 
@@ -144,6 +145,27 @@
                 padding:8px 16px; border-radius:5px; display:inline-block;
               }
               .sf-mockup .ba-caption{ font-size:12px; color:#767066; margin-top:8px; text-align:center; }
+
+              /* Error state and help text examples */
+              .sf-mockup .sf-error-example{
+                display:flex; gap:9px; align-items:flex-start;
+                background:#FDECEC; border:1px solid #F3C7C7; border-radius:5px;
+                padding:10px 12px; margin-bottom:10px;
+              }
+              .sf-mockup .err-icon{ color:#A81C1F; font-size:13px; line-height:1.3; }
+              .sf-mockup .err-title{ font-size:11.5px; font-weight:700; color:#A81C1F; margin-bottom:2px; }
+              .sf-mockup .err-body{ font-size:11px; color:#7A2E2E; line-height:1.4; }
+              .sf-mockup .sf-help-example{
+                display:flex; gap:9px; align-items:flex-start;
+                background:#F3F2EC; border:1px solid #E3DFD6; border-radius:5px;
+                padding:9px 12px; margin-bottom:12px;
+              }
+              .sf-mockup .help-icon{
+                width:15px; height:15px; border-radius:50%; background:#7E5D2F; color:#fff;
+                font-size:9.5px; font-weight:700; display:flex; align-items:center; justify-content:center;
+                flex-shrink:0; margin-top:1px;
+              }
+              .sf-mockup .help-body{ font-size:11px; color:#59544C; line-height:1.4; }
 
               /* Salesforce Lightning desktop chrome */
               .sf-mockup .sf-desktop{ width:100%; }
@@ -255,6 +277,17 @@
                 <div class="after-status">Ready for E-Signature</div>
                 <div class="after-field"><span class="fl">Document Type</span>Investment Advisory Agreement</div>
                 <div class="after-field"><span class="fl">Next Step</span>Send securely for e-signature</div>
+                <div class="sf-error-example">
+                  <span class="err-icon">⚠</span>
+                  <div>
+                    <div class="err-title">Client email not on file</div>
+                    <div class="err-body">Add a verified email before sending — this is required to deliver the secure e-signature request.</div>
+                  </div>
+                </div>
+                <div class="sf-help-example">
+                  <span class="help-icon">?</span>
+                  <span class="help-body">E-signature requests expire after 7 days. The client will receive a reminder after 3 days of inactivity.</span>
+                </div>
                 <div class="after-btn">Send for E-Signature</div>
               </div>
             </div>
