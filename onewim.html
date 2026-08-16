@@ -140,54 +140,121 @@
                 padding:8px 16px; border-radius:5px; display:inline-block;
               }
               .sf-mockup .ba-caption{ font-size:12px; color:#767066; margin-top:8px; text-align:center; }
+
+              /* Salesforce Lightning desktop chrome */
+              .sf-mockup .sf-desktop{ width:100%; }
+              .sf-mockup .sf-global-header{
+                background:#16325C; padding:8px 16px; display:flex; align-items:center; gap:14px;
+              }
+              .sf-mockup .sf-launcher{
+                color:#fff; font-size:16px; letter-spacing:-2px; opacity:.85; cursor:default;
+              }
+              .sf-mockup .sf-global-search{
+                flex:1; background:rgba(255,255,255,0.12); color:#C7D2E0;
+                font-size:11px; padding:6px 12px; border-radius:4px; max-width:320px;
+              }
+              .sf-mockup .sf-global-icons{ display:flex; align-items:center; gap:14px; font-size:13px; color:#C7D2E0; }
+              .sf-mockup .sf-avatar{
+                width:22px; height:22px; border-radius:50%; background:#7E5D2F; color:#fff;
+                font-size:9px; font-weight:700; display:flex; align-items:center; justify-content:center;
+              }
+              .sf-mockup .sf-app-bar{
+                background:#F3F2F2; padding:10px 16px 0; border-bottom:1px solid #DDDBDA;
+              }
+              .sf-mockup .sf-app-name{ font-size:14px; font-weight:700; color:#032D60; display:block; margin-bottom:8px; }
+              .sf-mockup .sf-tabs{ display:flex; gap:20px; font-size:11.5px; color:#514F4D; }
+              .sf-mockup .sf-tabs span{ padding-bottom:9px; white-space:nowrap; }
+              .sf-mockup .sf-tabs span.active{ color:#032D60; font-weight:700; border-bottom:3px solid #0176D3; }
+              .sf-mockup .sf-breadcrumb{
+                font-size:10.5px; color:#706E6B; padding:8px 16px; background:#fff; border-bottom:1px solid #F0EFED;
+              }
+              .sf-mockup .sf-path{
+                display:flex; margin:14px 0 18px; border-radius:4px; overflow:hidden;
+                font-size:10px; font-weight:700;
+              }
+              .sf-mockup .sf-path span{
+                flex:1; text-align:center; padding:8px 4px; background:#DDDBDA; color:#514F4D;
+                position:relative; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+              }
+              .sf-mockup .sf-path span.done{ background:#0176D3; color:#fff; }
+              .sf-mockup .sf-path span.current{ background:#032D60; color:#fff; }
+              .sf-mockup .before-fields-grid{
+                display:grid; grid-template-columns:1fr 1fr; gap:10px;
+              }
+
+              @media (max-width:640px){
+                .sf-mockup .sf-tabs{ overflow-x:auto; gap:14px; }
+                .sf-mockup .sf-path span{ font-size:8.5px; padding:7px 2px; }
+                .sf-mockup .before-fields-grid{ grid-template-columns:1fr; }
+                .sf-mockup .sf-global-search{ display:none; }
+              }
             </style>
 
-            <div class="ba-row">
-              <div>
-                <span class="ba-label before">Before — Unbranded Salesforce</span>
-                <div class="sf-window">
-                  <div class="sf-titlebar">
-                    <div class="sf-dot"></div><div class="sf-dot"></div><div class="sf-dot"></div>
-                    <div class="sf-urlbar">yourcompany.lightning.force.com</div>
-                  </div>
-                  <div class="before-nav"><div class="sf-cloud"></div>Advisor Console</div>
-                  <div class="before-body">
-                    <div class="before-title">New Account Application</div>
-                    <div class="before-step">Step 3 of 7 — Account Type &amp; Beneficiaries</div>
-                    <div class="before-progress">
-                      <span class="done"></span><span class="done"></span><span class="done"></span>
-                      <span></span><span></span><span></span><span></span>
-                    </div>
-                    <div class="before-field"><span class="fl">Account Type</span>Traditional IRA</div>
-                    <div class="before-field"><span class="fl">Primary Beneficiary</span>Spouse — 100%</div>
-                    <div class="before-field"><span class="fl">Contribution Source</span>Rollover from 401(k)</div>
-                    <div class="before-btn">Continue to Step 4</div>
-                    <div class="before-note">7 steps total — client must visit branch to wet-sign at completion</div>
-                  </div>
+            <span class="ba-label before">Before — Unbranded Salesforce Lightning</span>
+            <div class="sf-window sf-desktop">
+              <!-- Salesforce global header -->
+              <div class="sf-global-header">
+                <div class="sf-launcher">⁛⁛⁛</div>
+                <div class="sf-global-search">🔍 Search Salesforce</div>
+                <div class="sf-global-icons">
+                  <span>⚙</span><span>🔔</span>
+                  <span class="sf-avatar">JW</span>
                 </div>
-                <p class="ba-caption">Generic Salesforce shell — no brand identity, no e-sign path, multi-step application headed toward a wet signature.</p>
               </div>
-
-              <div>
-                <span class="ba-label after">After — Wells Fargo Wealth Management</span>
-                <div class="sf-window">
-                  <div class="sf-titlebar">
-                    <div class="sf-dot"></div><div class="sf-dot"></div><div class="sf-dot"></div>
-                    <div class="sf-urlbar">onewim.wellsfargo.com</div>
-                  </div>
-                  <div class="after-nav">WELLS FARGO ADVISORS</div>
-                  <div class="after-body">
-                    <div class="after-title">Client Agreement — J. Whitfield</div>
-                    <div class="after-sub">OneWIM · Advisor Workspace</div>
-                    <div class="after-status">Ready for E-Signature</div>
-                    <div class="after-field"><span class="fl">Document Type</span>Investment Advisory Agreement</div>
-                    <div class="after-field"><span class="fl">Next Step</span>Send securely for e-signature</div>
-                    <div class="after-btn">Send for E-Signature</div>
-                  </div>
+              <!-- App tab bar -->
+              <div class="sf-app-bar">
+                <span class="sf-app-name">Advisor Console</span>
+                <div class="sf-tabs">
+                  <span>Home</span><span>Accounts</span><span>Opportunities</span>
+                  <span class="active">New Account Application</span><span>Reports</span>
                 </div>
-                <p class="ba-caption">On-brand, WCAG-compliant, e-sign enabled — advisor sends in one click.</p>
+              </div>
+              <div class="sf-breadcrumb">Home &nbsp;›&nbsp; Opportunities &nbsp;›&nbsp; New Account Application</div>
+
+              <div class="before-body">
+                <div class="before-title">New IRA Account — J. Whitfield</div>
+                <div class="before-step">Guided Process &nbsp;·&nbsp; Step 3 of 7 — Account Type &amp; Beneficiaries</div>
+
+                <!-- Salesforce Path component -->
+                <div class="sf-path">
+                  <span class="done">1. Client Info</span>
+                  <span class="done">2. Account Setup</span>
+                  <span class="current">3. Type &amp; Beneficiaries</span>
+                  <span>4. Funding</span>
+                  <span>5. Disclosures</span>
+                  <span>6. Review</span>
+                  <span>7. Signature</span>
+                </div>
+
+                <div class="before-fields-grid">
+                  <div class="before-field"><span class="fl">Account Type</span>Traditional IRA</div>
+                  <div class="before-field"><span class="fl">Primary Beneficiary</span>Spouse — 100%</div>
+                  <div class="before-field"><span class="fl">Contribution Source</span>Rollover from 401(k)</div>
+                  <div class="before-field"><span class="fl">Contingent Beneficiary</span>Not yet specified</div>
+                </div>
+                <div class="before-btn">Save &amp; Continue to Step 4</div>
+                <div class="before-note">7 steps total — client must visit branch in person to wet-sign at completion</div>
               </div>
             </div>
+            <p class="ba-caption">Generic Salesforce Lightning shell — no brand identity, no e-sign path, seven-step application headed toward a wet signature.</p>
+
+            <span class="ba-label after" style="margin-top:36px; display:inline-block;">After — Wells Fargo Wealth Management</span>
+            <div class="sf-window">
+              <div class="sf-titlebar">
+                <div class="sf-dot"></div><div class="sf-dot"></div><div class="sf-dot"></div>
+                <div class="sf-urlbar">onewim.wellsfargo.com</div>
+              </div>
+              <div class="after-nav">WELLS FARGO ADVISORS</div>
+              <div class="after-body">
+                <div class="after-title">Client Agreement — J. Whitfield</div>
+                <div class="after-sub">OneWIM · Advisor Workspace</div>
+                <div class="after-status">Ready for E-Signature</div>
+                <div class="after-field"><span class="fl">Document Type</span>Investment Advisory Agreement</div>
+                <div class="after-field"><span class="fl">Next Step</span>Send securely for e-signature</div>
+                <div class="after-btn">Send for E-Signature</div>
+              </div>
+            </div>
+            <p class="ba-caption">On-brand, WCAG-compliant, e-sign enabled — advisor sends in one click.</p>
 
             <div style="display:flex; justify-content:center; margin-top:36px;">
               <div style="text-align:center; max-width:280px;">
