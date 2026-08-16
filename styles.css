@@ -545,39 +545,41 @@ footer{
 
 /* -------------------- Numbered process blocks -------------------- */
 
-.pb-block{
+.pb-grid{
   display: grid;
-  grid-template-columns: 72px 1fr;
-  gap: 24px;
-  margin: 56px 0;
-  padding-top: 40px;
-  border-top: 1px solid var(--hairline);
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: start;
 }
 
-.pb-block:first-child{
-  margin-top: 0;
-  padding-top: 0;
-  border-top: none;
+.pb-block{
+  background: var(--white);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  padding: 28px 26px;
+  box-shadow: 0 4px 14px -10px rgba(23,20,15,0.15);
+  margin: 0;
 }
 
 .pb-num{
   font-family: var(--font-display);
   font-style: italic;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 32px;
   color: var(--brass-light);
   line-height: 1;
+  margin-bottom: 14px;
 }
 
 .pb-content h2{
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   margin: 0 0 14px;
 }
 
 .pb-content p{
-  font-size: 16px;
+  font-size: 15.5px;
   color: var(--ink-soft);
   line-height: 1.7;
   margin: 0 0 16px;
@@ -585,14 +587,9 @@ footer{
 
 .pb-content p:last-child{ margin-bottom: 0; }
 
-@media (max-width: 640px){
-  .pb-block{
-    grid-template-columns: 1fr;
-    gap: 10px;
-    margin: 40px 0;
-    padding-top: 28px;
-  }
-  .pb-num{ font-size: 30px; }
+@media (max-width: 760px){
+  .pb-grid{ grid-template-columns: 1fr; gap: 20px; }
+  .pb-num{ font-size: 28px; }
 }
 
 .cs-body p{
