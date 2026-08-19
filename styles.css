@@ -8,8 +8,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap');
 
 :root{
-  --paper: #FAF9F7;
-  --paper-deep: #F0EEEA;
+  --paper: #F2F0ED;
+  --paper-deep: #E8E5DF;
   --ink: #17140F;
   --ink-soft: #59544C;
   --brass: #A87C3F;
@@ -72,7 +72,7 @@ img{ max-width: 100%; display: block; }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(240,238,234,0.92);
+  background: rgba(232,229,223,0.92);
   backdrop-filter: saturate(140%) blur(6px);
   border-bottom: 1px solid var(--hairline);
 }
@@ -341,8 +341,8 @@ section{ padding: 88px 0; }
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--teal);
-  background: rgba(18,33,61,0.08);
+  color: var(--brass);
+  background: rgba(168,124,63,0.14);
   border-radius: 20px;
   padding: 5px 10px;
 }
