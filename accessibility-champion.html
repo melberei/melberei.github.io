@@ -42,8 +42,37 @@
         <div class="pb-block">
           <div class="pb-num">01</div>
           <div class="pb-content">
+            <h2>Rebuilding an accessible color palette for capital markets charts</h2>
+            <p class="highlight-subtitle">Discovered June 2020 · Remedied December 2020</p>
+            <p>In 2020, WCAG and accessibility standards for Trust Services and IFS started getting real attention across the organization for the first time. One of the first places I noticed a problem was in the charts, specifically pie charts where adjacent color segments had no divider line between them and were genuinely hard to tell apart. The palette behind them was easily ten years old, originally pulled from Capital Market Assumptions data and assigned internally, with more than 100 distinct hex values mapped to categories like miscellaneous, cash alternatives, other, alternative investments, real assets, equities, and fixed income. Those colors needed to be distinguishable both with and without a white divider line between segments, and they weren't.</p>
+
+            <p style="font-size:13px; font-style:italic; color:var(--ink-soft); max-width:640px; margin:16px 0 0;">Confidentiality Notice: Visuals have been recreated using AI to protect confidential information while accurately representing my design work.</p>
+
+            <figure class="cs-figure">
+              <img src="accessibility-pie-chart.jpeg" alt="Asset Allocation pie chart with adjacent color segments and no divider lines between them">
+              <p class="caption">The asset allocation pie chart, adjacent segments with no divider line, exactly the pattern that made the colors hard to differentiate.</p>
+            </figure>
+
+            <figure class="cs-figure">
+              <img src="accessibility-dashboard.jpeg" alt="Full IFS Overview dashboard showing asset allocation pie chart alongside monthly account value bar and area charts">
+              <p class="caption">The broader IFS Overview dashboard, the same color palette repeated across every chart on the page.</p>
+            </figure>
+
+            <p>Monthly Account Value charts had the same underlying issue: when colors weren't differentiated enough, the chart failed to meet the accessibility standards that were clearly on their way.</p>
+            <p>My process started with partnering with an accessibility SME and building a spreadsheet where I could lay every color out next to its neighbors, hex value included, so the SME could quickly scan and test each pairing for contrast and differentiation. I'll admit Excel isn't usually my strong suit, but I figured out how to make it work. That spreadsheet became the foundation for an entirely new color palette, one that replaced the decade-old Capital Market Assumptions colors across every chart in the Trust Services experience.</p>
+            <div class="pull-tile" style="margin-top:0;">
+              <div class="tile-label">The fix</div>
+              <p>A new, fully accessible color palette for capital markets charts, built pairing by pairing with an accessibility SME rather than guessed at, then taken through my leadership and our dev partner stakeholders for funding and implementation.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pb-block">
+          <div class="pb-num">02</div>
+          <div class="pb-content">
             <h2>Fixing link contrast in Private Bank</h2>
-            <p>My first Accessibility Champion recognition grew out of work maintaining the Private Bank pages within IFS Trust Services. Private Bank mirrored the broader IFS experience but ran on its own brand palette, a color system unique to interfaces serving ultra-high-net-worth clients. I took ownership of keeping those pages current as IFS Trust Services continued to evolve.</p>
+            <p class="highlight-subtitle">Discovered February 2021 · Remedied July 2021</p>
+            <p>My second Accessibility Champion recognition grew out of work maintaining the Private Bank pages within IFS Trust Services. Private Bank mirrored the broader IFS experience but ran on its own brand palette, a color system unique to interfaces serving ultra-high-net-worth clients. I took ownership of keeping those pages current as IFS Trust Services continued to evolve.</p>
             <p>Around that same time, a growing personal focus on accessibility led me to a simple but important realization: internal-facing standards for our own team members, from relationship managers to customer service, weren't getting the same accessibility scrutiny as customer-facing experiences. Looking closely at the Private Bank palette specifically, I noticed one of its core blues, the color used across links and URLs, didn't look like it would meet WCAG contrast standards. I checked. It didn't.</p>
             <p>Before treating it as a confirmed problem, I got approval from leadership to formally audit the issue. That meant looping in accessibility SMEs already familiar with Trust Services, and scoping a full, end-to-end audit of everywhere that specific hex value appeared, whether in print or in on-screen link styling. Once I had funding and approval, I brought on a visual designer to lead that audit and compile documentation we could bring to every stakeholder who needed awareness of it, from developers through our most senior stakeholders.</p>
             <div class="pull-tile" style="margin-top:0;">
