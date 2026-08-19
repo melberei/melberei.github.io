@@ -8,15 +8,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap');
 
 :root{
-  --paper: #FBF7EC;
-  --paper-deep: #F4EEDD;
+  --paper: #FAF9F7;
+  --paper-deep: #F0EEEA;
   --ink: #17140F;
   --ink-soft: #59544C;
   --brass: #A87C3F;
   --brass-light: #C9A15F;
   --teal: #12213D;
   --teal-light: #2C4267;
-  --hairline: #DCD3BF;
+  --hairline: #E3E0DA;
   --white: #FFFDF8;
 
   --font-display: 'Fraunces', serif;
@@ -72,7 +72,7 @@ img{ max-width: 100%; display: block; }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(251,247,236,0.92);
+  background: rgba(240,238,234,0.92);
   backdrop-filter: saturate(140%) blur(6px);
   border-bottom: 1px solid var(--hairline);
 }
