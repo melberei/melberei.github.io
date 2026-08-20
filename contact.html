@@ -12,6 +12,9 @@
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="index.html">Marylynne <span>Berei</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
     <nav>
       <ul class="nav">
         <li><a href="index.html#work">Work</a></li>
@@ -68,5 +71,13 @@
   </div>
 </footer>
 
+<script>
+  document.getElementById('navToggle').addEventListener('click', function() {
+    var nav = document.querySelector('.nav');
+    var isOpen = nav.classList.toggle('nav-open');
+    this.classList.toggle('open', isOpen);
+    this.setAttribute('aria-expanded', isOpen);
+  });
+</script>
 </body>
 </html>
