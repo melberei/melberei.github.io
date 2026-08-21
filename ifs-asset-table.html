@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IFS Asset Detail Table — Marylynne Berei</title>
+<meta name="description" content="Reimagining data density in the Investment Fiduciary Services Asset Detail Table — full column visibility on tablet without sacrificing a single data point.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Marylynne <span>Berei</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="more-work.html">Highlights</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="https://www.linkedin.com/in/melberei26" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="Berei-Resume-2026.pdf" target="_blank" rel="noopener">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="cs-hero">
+    <div class="wrap">
+      <p class="eyebrow">Investment Fiduciary Services · Wells Fargo</p>
+      <h1>Reimagining data density in the IFS Asset Detail Table</h1>
+      <p class="lede" style="margin-top:20px; font-size:17px; color:var(--ink-soft); max-width:60ch;">Full visibility into 17 to 20 columns of investment data on tablet, without sacrificing a single data point, by challenging a "hard browser limitation" that turned out not to be one.</p>
+      <div class="cs-meta">
+        <div><div class="label">Role</div><div class="value">Lead, IFS 1 &amp; IFS 2 Teams</div></div>
+        <div><div class="label">Platform</div><div class="value">Tablet, high-density data table</div></div>
+        <div><div class="label">Focus</div><div class="value">Research, component reuse, data integrity</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap cs-body">
+
+      <div class="pb-grid" style="margin-top:32px;">
+
+        <div class="pb-block">
+          <div class="pb-num">01</div>
+          <div class="pb-content">
+            <h2>The constraint</h2>
+            <p>When I took over the Investment Fiduciary Services (IFS) project at Wells Fargo, one of the most highly funded initiatives in the bank's history, I inherited a critical usability gap in the asset detail table. On tablet, relationship managers and clients could only see eight columns of data, despite needing access to seventeen to twenty. The existing rationale was that this was simply a browser limitation, that true responsiveness wasn't achievable at that breakpoint. I pushed back on that assumption.</p>
+          </div>
+        </div>
+
+        <div class="pb-block">
+          <div class="pb-num">02</div>
+          <div class="pb-content">
+            <h2>The research</h2>
+            <p>Leading both the IFS 1 and IFS 2 teams, I directed competitive research to identify how other platforms handled dense, high-stakes data on constrained screens. Part of that approach was digging into what competitors and other design teams were doing to solve large, complex tables without compromising the customer experience. After a fair amount of research on my own, I found detailed, well-documented examples on Shopify's Shared UX site and brought them to our stakeholders and front-end development lead.</p>
+          </div>
+        </div>
+
+        <div class="pb-block">
+          <div class="pb-num">03</div>
+          <div class="pb-content">
+            <h2>The solution</h2>
+            <p>Rather than building something new from scratch, we were able to reuse an existing component already in our design system: the paddle controls from our carousel pattern, adapted here to navigate table columns instead of carousel slides. We landed on a solution that kept a core set of columns visible at all times, while allowing users to navigate additional columns using those paddle controls paired with dot indicators, giving them a clear sense of how many columns remained and how many they'd already passed.</p>
+
+            <p style="font-size:13px; font-style:italic; color:var(--ink-soft); max-width:640px; margin:16px 0 0;">Confidentiality Notice: Visuals have been recreated using AI to protect confidential information while accurately representing my design work.</p>
+
+            <div class="ifs-table-mockup">
+              <style>
+                .ifs-table-mockup, .ifs-table-mockup *{ box-sizing:border-box; }
+                .ifs-table-mockup{ font-family:'Inter',sans-serif; margin:28px 0 8px; }
+                .ifs-table-mockup .ba-label{
+                  font-size:11px; font-weight:700; letter-spacing:1px; text-transform:uppercase;
+                  margin:0 0 10px; padding:4px 10px; border-radius:20px; display:inline-block;
+                }
+                .ifs-table-mockup .ba-label.before{ background:#F0EDE6; color:#767066; }
+                .ifs-table-mockup .ba-label.after{ background:#1B1B1B; color:#C9A15F; }
+                .ifs-table-mockup .tbl-window{
+                  background:#fff; border-radius:10px; overflow:hidden;
+                  box-shadow:0 16px 40px -20px rgba(27,27,27,0.3), 0 0 0 1px #E3DFD6;
+                  margin-bottom:8px;
+                }
+                .ifs-table-mockup .tbl-toolbar{
+                  display:flex; align-items:center; justify-content:space-between;
+                  padding:12px 16px; border-bottom:1px solid #E3DFD6; background:#FBFAF7;
+                }
+                .ifs-table-mockup .tbl-toolbar .acct{ font-size:12.5px; font-weight:700; color:#032D60; }
+                .ifs-table-mockup .paddle-nav{ display:flex; align-items:center; gap:6px; }
+                .ifs-table-mockup .paddle-btn{
+                  width:20px; height:20px; border-radius:50%; border:1px solid #DDDBDA;
+                  display:flex; align-items:center; justify-content:center;
+                  font-size:11px; color:#59544C; background:#fff; flex-shrink:0;
+                }
+                .ifs-table-mockup .paddle-dots{ display:flex; align-items:center; gap:3px; }
+                .ifs-table-mockup .paddle-dots span{ width:5px; height:5px; border-radius:50%; background:#DDDBDA; }
+                .ifs-table-mockup .paddle-dots span.passed{ background:#C9A15F; }
+                .ifs-table-mockup .paddle-dots span.current{ background:#12213D; width:7px; height:7px; }
+                .ifs-table-mockup table{ width:100%; border-collapse:collapse; font-size:11.5px; }
+                .ifs-table-mockup th{
+                  text-align:left; font-size:10px; font-weight:700; letter-spacing:.4px; text-transform:uppercase;
+                  color:#767066; padding:9px 12px; border-bottom:1px solid #E3DFD6; white-space:nowrap;
+                }
+                .ifs-table-mockup td{
+                  padding:10px 12px; border-bottom:1px solid #F0EDE6; color:#1B1B1B; white-space:nowrap;
+                }
+                .ifs-table-mockup tr:last-child td{ border-bottom:none; }
+                .ifs-table-mockup .sticky-col{
+                  position:sticky; left:0; background:#fff; font-weight:600;
+                  box-shadow:2px 0 4px -2px rgba(0,0,0,0.08);
+                }
+                .ifs-table-mockup th.sticky-col{ background:#FBFAF7; }
+                .ifs-table-mockup .tbl-scroll-before{ overflow:hidden; position:relative; }
+                .ifs-table-mockup .tbl-fade{
+                  position:absolute; top:0; right:0; bottom:0; width:36px;
+                  background:linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.95));
+                  pointer-events:none;
+                }
+                .ifs-table-mockup .tbl-scroll-after{ overflow-x:auto; }
+                .ifs-table-mockup .ba-caption{ font-size:12px; color:#767066; margin-top:4px; margin-bottom:28px; text-align:center; }
+              </style>
+
+              <span class="ba-label before">Before</span>
+              <div class="tbl-window">
+                <div class="tbl-toolbar">
+                  <span class="acct">Asset Detail — ABC Trust Account</span>
+                </div>
+                <div class="tbl-scroll-before">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class="sticky-col">Account</th>
+                        <th>Asset Class</th>
+                        <th>Market Value</th>
+                        <th>Cost Basis</th>
+                        <th>Unrealized G/L</th>
+                        <th>YTD Return</th>
+                        <th>Yield</th>
+                        <th>Alloc %</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="sticky-col">ABC Account</td>
+                        <td>Equities</td>
+                        <td>$643,787</td>
+                        <td>$580,200</td>
+                        <td>+$63,587</td>
+                        <td>+8.4%</td>
+                        <td>1.8%</td>
+                        <td>56.7%</td>
+                      </tr>
+                      <tr>
+                        <td class="sticky-col">EFG Sub Account</td>
+                        <td>Fixed Income</td>
+                        <td>$201,787</td>
+                        <td>$198,400</td>
+                        <td>+$3,387</td>
+                        <td>+1.2%</td>
+                        <td>4.1%</td>
+                        <td>17.7%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="tbl-fade"></div>
+                </div>
+              </div>
+              <p class="ba-caption">Only 8 of 17&ndash;20 columns fit. The rest simply don't exist for the user, no scroll cue, no way in.</p>
+
+              <span class="ba-label after">After</span>
+              <div class="tbl-window">
+                <div class="tbl-toolbar">
+                  <span class="acct">Asset Detail — ABC Trust Account</span>
+                  <div class="paddle-nav">
+                    <div class="paddle-btn">‹</div>
+                    <div class="paddle-dots">
+                      <span class="passed"></span><span class="passed"></span><span class="passed"></span><span class="current"></span>
+                      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="paddle-btn">›</div>
+                  </div>
+                </div>
+                <div class="tbl-scroll-after">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class="sticky-col">Account</th>
+                        <th>Asset Class</th>
+                        <th>Market Value</th>
+                        <th>Cost Basis</th>
+                        <th>Unrealized G/L</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="sticky-col">ABC Account</td>
+                        <td>Equities</td>
+                        <td>$643,787</td>
+                        <td>$580,200</td>
+                        <td>+$63,587</td>
+                      </tr>
+                      <tr>
+                        <td class="sticky-col">EFG Sub Account</td>
+                        <td>Fixed Income</td>
+                        <td>$201,787</td>
+                        <td>$198,400</td>
+                        <td>+$3,387</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <p class="ba-caption">Account column stays pinned. The dot indicator shows exactly where you are: gold for columns already passed, navy for the current column, and empty dots for what's still hidden to the right, so the paddle controls always tell you both how far you've come and how much further there is to go.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="pb-block">
+          <div class="pb-num">04</div>
+          <div class="pb-content">
+            <h2>Outcome</h2>
+            <div class="pull-tile" style="margin-top:0;">
+              <div class="tile-label">Results</div>
+              <p>Full visibility into investment portfolios without sacrificing a single data point, even on smaller screens. Every column retained its totals row, so nothing about the integrity of the data was lost in the process, proving that "the browser won't allow it" was a design assumption worth challenging, not a hard limit.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="cs-nav">
+      <a href="more-work.html">← Back to Highlights</a>
+      <a href="contact.html">Get in touch →</a>
+    </div>
+  </div>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-cta">
+        <h3>Turning complexity into clarity.</h3>
+      </div>
+      <div>
+        <p class="eyebrow" style="margin-bottom:12px;">Contact</p>
+        <ul class="footer-links">
+          <li><a href="https://www.linkedin.com/in/melberei26" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li><a href="Berei-Resume-2026.pdf" target="_blank" rel="noopener">Resume ↗</a></li>
+          <li><a href="tel:+17047283659">704-728-3659</a></li>
+          <li><a href="mailto:melb122@gmail.com">Email ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Marylynne Berei</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function() {
+    var nav = document.querySelector('.nav');
+    var isOpen = nav.classList.toggle('nav-open');
+    this.classList.toggle('open', isOpen);
+    this.setAttribute('aria-expanded', isOpen);
+  });
+</script>
+</body>
+</html>
