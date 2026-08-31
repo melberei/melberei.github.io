@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OneWIM · Marylynne Berei</title>
+<meta name="description" content="OneWIM: rebuilding the Advisor Gateway experience on Salesforce, from advisor pain points to a board-ready, WCAG-compliant, on-brand prototype in six weeks.">
+<link rel="stylesheet" href="styles.css">
+<script data-goatcounter="https://melberei.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Marylynne <span>Berei</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="more-work.html">Highlights</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="https://www.linkedin.com/in/melberei26" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="Berei-Resume-2026.pdf" target="_blank" rel="noopener">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="cs-hero">
+    <div class="wrap">
+      <p class="eyebrow">Wealth Investment Management · Wells Fargo</p>
+      <h1>OneWIM: rebuilding the advisor experience from the ground up</h1>
+      <p class="lede" style="margin-top:20px; font-size:17px; color:var(--ink-soft); max-width:60ch;">A Salesforce-based rebrand of Advisor Gateway, grounded in direct advisor research, delivered as a board-ready, WCAG-compliant prototype in six weeks.</p>
+      <div class="cs-meta">
+        <div><div class="label">Role</div><div class="value">Senior Lead Product Designer, Project Lead</div></div>
+        <div><div class="label">Timeline</div><div class="value">6-week sprint to board-ready prototype</div></div>
+        <div><div class="label">Focus</div><div class="value">Strategy, content design &amp; accessibility</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap cs-body" style="max-width:980px;">
+
+      <div class="pb-grid">
+      <div class="pb-block">
+        <div class="pb-num">01</div>
+        <div class="pb-content">
+          <h2>Understanding the pain points</h2>
+          <p>WIM Leadership reached out to me to lead a solution when an external vendor's prototype fell short of what stakeholders needed, and the clock was already running. An upcoming Operating Committee review, tied directly to funding approval, meant we needed a fully interactive, end-to-end prototype ready in a matter of weeks, not months.</p>
+          <p>At the center of the problem was a genuinely outdated client experience: opening a new investment account, such as an IRA, still required a wet signature at every step of the application. That paperwork-heavy process lived inside a system built entirely in-house, not on Salesforce. Wells Fargo was moving toward a new Salesforce instance to replace the aging, internally-built tool, and the vendor's job had been to brand and skin that upcoming Salesforce environment, not to design the experience from scratch. When the vendor's work fell short, the real challenge became designing a genuinely on-brand, e-sign-enabled experience on that new Salesforce foundation, one built to finally retire the outdated in-house system for good.</p>
+          <p>The goal was to design a path from the advisor's application through to the client, in a strict e-sign environment, one that met compliance, WCAG accessibility, and Wells Fargo brand standards simultaneously, not as separate hurdles to clear after the fact. That gap wasn't just an inconvenience: it meant advisors couldn't close business remotely, and clients were held to a process that hadn't kept pace with how the rest of their financial lives worked.</p>
+        </div>
+      </div>
+
+      <div class="pb-block">
+        <div class="pb-num">02</div>
+        <div class="pb-content">
+          <h2>Building the business case</h2>
+          <p>The pain points behind OneWIM were already well documented by the time we took on this effort: an all-wet-sign, all-hardcopy process, a clunky, outdated interface that fell short of both brand and accessibility standards, and an advisor population dissatisfied enough with their tools that some were leaving Wells Fargo altogether over it. That documented reality was more than enough on its own to justify the work.</p>
+          <p>What I brought in addition was a firsthand, personal data point that reinforced what was already known rather than originated it. At the time, I happened to be in the process of moving my own investment accounts to Wells Fargo Advisors, which meant I could sit with my own advisor and go through the exact end-to-end process we were trying to fix, not as a designer observing from the outside, but as an actual client living it.</p>
+          <p>I watched just how much paper the process generated, how many wet signatures it required, and how long it actually took. During one of those sessions, opening a real IRA account, my advisor discovered the paperwork had the wrong date of birth for my son. That single error meant going back through the forms, correcting it, and reprinting everything for a fresh round of wet signatures, adding at least twenty minutes to a process that already felt inefficient, paper-heavy, and error-prone by design.</p>
+          <p>That firsthand experience became a compelling, human addition to a case that was already well-supported. It wasn't a hypothetical inefficiency pulled from a report; it was a real client, in a real branch, watching a correctable error cost twenty extra minutes and a stack of reprinted paper. Alongside the documented advisor dissatisfaction and attrition, I built the case for OneWIM as a unified, Salesforce-based rebrand around exactly that kind of moment: not just a visual refresh, but a consolidation of aging, disconnected, paper-dependent processes into a single, modern advisor experience. I framed the opportunity around what leadership cared about most: reduced onboarding and support time for new advisors, fewer workaround- and error-driven delays, and a platform built to scale as Wealth Investment Management continued to grow.</p>
+          <p>A core part of that solution was technical: by using our APIs to connect directly to the client database electronically, we were able to auto-populate and verify client data rather than rely on manual entry. That meant a huge reduction in user error and duplication of effort; advisors no longer had to manually retype Social Security numbers, dates of birth, or other sensitive information that had previously been transcribed by hand at every step.</p>
+          <p>That framing, grounded in real advisor and client evidence rather than assumption, was what secured executive buy-in for an aggressive six-week timeline from concept to board-ready prototype.</p>
+        </div>
+      </div>
+
+      <div class="pb-block">
+        <div class="pb-num">03</div>
+        <div class="pb-content">
+          <h2>Content strategy &amp; brand alignment</h2>
+          <p>Advisor Gateway had drifted far enough from Wells Fargo's enterprise brand standards that it read as a separate, dated product rather than part of a cohesive suite of tools. Bringing OneWIM back in line with brand meant more than swapping colors and logos; it meant rebuilding component patterns, typography, and interaction states to match current standards, while making sure the result still felt purpose-built for the density and complexity advisors actually work in.</p>
+          <p>That rebuild went beyond the visual layer, and it's where content strategy did as much heavy lifting as visual design. Error states, system messaging, inline validation, and contextual help text were all rewritten and restyled as part of the same effort, not left as generic system defaults. Where the legacy experience threw vague, inconsistent error text at advisors, OneWIM's messaging was rebuilt with a deliberate content strategy: specific, actionable, and on-brand, telling an advisor exactly what went wrong and what to do next, in language consistent with how Wells Fargo actually communicates with its own people. Help text and tooltips followed that same content strategy, giving advisors contextual guidance in the moment rather than sending them hunting through a separate help center.</p>
+
+          <p style="font-size:13px; font-style:italic; color:var(--ink-soft); max-width:640px; margin:24px 0 0;">Confidentiality Notice: Visuals have been recreated using AI to protect confidential information while accurately representing my design work.</p>
+
+          <div class="sf-mockup">
+            <style>
+              .sf-mockup, .sf-mockup *{ box-sizing:border-box; }
+              .sf-mockup{ font-family:'Inter',sans-serif; margin:28px 0 8px; }
+              .sf-mockup .ba-row{ display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+              @media (max-width:760px){ .sf-mockup .ba-row{ grid-template-columns:1fr; } }
+              .sf-mockup .ba-label{
+                font-size:11px; font-weight:700; letter-spacing:1px; text-transform:uppercase;
+                margin:0 0 8px; padding:4px 10px; border-radius:20px; display:inline-block;
+              }
+              .sf-mockup .ba-label.before{ background:#F0EDE6; color:#767066; }
+              .sf-mockup .ba-label.after{ background:#1B1B1B; color:#C9A15F; }
+              .sf-mockup .sf-window{
+                background:#fff; border-radius:10px; overflow:hidden;
+                box-shadow:0 16px 40px -20px rgba(27,27,27,0.3), 0 0 0 1px #E3DFD6;
+              }
+              .sf-mockup .sf-titlebar{
+                display:flex; align-items:center; gap:6px;
+                background:#EDEAE2; padding:7px 10px; border-bottom:1px solid #E3DFD6;
+              }
+              .sf-mockup .sf-dot{ width:8px; height:8px; border-radius:50%; background:#D8D2C4; }
+              .sf-mockup .sf-urlbar{
+                flex:1; margin-left:6px; background:#fff; border:1px solid #E3DFD6;
+                border-radius:5px; padding:3px 8px; font-size:10px; color:#767066;
+                overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+              }
+              /* Before: generic unbranded Salesforce: multi-step application in progress */
+              .sf-mockup .before-nav{
+                background:#032D60; color:#fff; padding:10px 14px;
+                font-weight:700; font-size:13px; display:flex; align-items:center; gap:8px;
+              }
+              .sf-mockup .before-nav .sf-cloud{ width:18px; height:18px; border-radius:4px; background:#0176D3; flex-shrink:0; }
+              .sf-mockup .before-body{ padding:16px; background:#F3F3F3; }
+              .sf-mockup .before-title{ font-size:14px; font-weight:700; color:#032D60; margin-bottom:2px; }
+              .sf-mockup .before-step{ font-size:10.5px; color:#706E6B; font-weight:600; margin-bottom:10px; }
+              .sf-mockup .before-progress{ display:flex; gap:4px; margin-bottom:14px; }
+              .sf-mockup .before-progress span{ flex:1; height:4px; border-radius:2px; background:#DDDBDA; }
+              .sf-mockup .before-progress span.done{ background:#0176D3; }
+              .sf-mockup .before-field{
+                background:#fff; border:1px solid #DDDBDA; border-radius:4px;
+                padding:9px 10px; font-size:11.5px; color:#3E3E3C; margin-bottom:8px;
+              }
+              .sf-mockup .before-field .fl{ font-size:10px; color:#706E6B; font-weight:600; display:block; margin-bottom:2px; }
+              .sf-mockup .before-btn{
+                background:#0176D3; color:#fff; font-size:11.5px; font-weight:600;
+                padding:8px 14px; border-radius:4px; display:inline-block;
+              }
+              .sf-mockup .before-note{ font-size:10px; color:#A31621; margin-top:10px; }
+              /* After: Wells Fargo Wealth Management branded (matches wellsfargoadvisors.com) */
+              .sf-mockup .after-nav{
+                background:#7E5D2F; color:#fff; padding:12px 14px;
+                font-weight:800; font-size:13px; letter-spacing:.3px;
+                text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+              }
+              .sf-mockup .after-body{ padding:16px; background:#F8F6F1; }
+              .sf-mockup .after-title{ font-size:15px; font-weight:800; color:#1B1B1B; margin-bottom:2px; }
+              .sf-mockup .after-sub{ font-size:11px; color:#767066; margin-bottom:12px; }
+              .sf-mockup .after-field{
+                background:#fff; border:1px solid #E3DFD6; border-left:3px solid #7E5D2F;
+                border-radius:5px; padding:9px 10px; font-size:11.5px; color:#1B1B1B; margin-bottom:8px;
+              }
+              .sf-mockup .after-field .fl{ font-size:10px; color:#7E5D2F; font-weight:700; display:block; margin-bottom:2px; text-transform:uppercase; letter-spacing:.4px; }
+              .sf-mockup .after-status{
+                display:inline-block; background:#E7F1EA; color:#2E7D4F;
+                font-size:10.5px; font-weight:700; padding:3px 9px; border-radius:3px; margin-bottom:10px;
+              }
+              .sf-mockup .after-btn{
+                background:#1B1B1B; color:#C9A15F; font-size:11.5px; font-weight:700;
+                padding:8px 16px; border-radius:5px; display:inline-block;
+              }
+              .sf-mockup .ba-caption{ font-size:12px; color:#767066; margin-top:8px; text-align:center; }
+
+              /* Error state and help text examples */
+              .sf-mockup .sf-error-example{
+                display:flex; gap:9px; align-items:flex-start;
+                background:#FDECEC; border:1px solid #F3C7C7; border-radius:5px;
+                padding:10px 12px; margin-bottom:10px;
+              }
+              .sf-mockup .err-icon{ color:#A81C1F; font-size:13px; line-height:1.3; }
+              .sf-mockup .err-title{ font-size:11.5px; font-weight:700; color:#A81C1F; margin-bottom:2px; }
+              .sf-mockup .err-body{ font-size:11px; color:#7A2E2E; line-height:1.4; }
+              .sf-mockup .sf-help-example{
+                display:flex; gap:9px; align-items:flex-start;
+                background:#F3F2EC; border:1px solid #E3DFD6; border-radius:5px;
+                padding:9px 12px; margin-bottom:12px;
+              }
+              .sf-mockup .help-icon{
+                width:15px; height:15px; border-radius:50%; background:#7E5D2F; color:#fff;
+                font-size:9.5px; font-weight:700; display:flex; align-items:center; justify-content:center;
+                flex-shrink:0; margin-top:1px;
+              }
+              .sf-mockup .help-body{ font-size:11px; color:#59544C; line-height:1.4; }
+
+              /* Salesforce Lightning desktop chrome */
+              .sf-mockup .sf-desktop{ width:100%; }
+              .sf-mockup .sf-global-header{
+                background:#16325C; padding:8px 16px; display:flex; align-items:center; gap:14px;
+              }
+              .sf-mockup .sf-launcher{
+                color:#fff; font-size:16px; letter-spacing:-2px; opacity:.85; cursor:default;
+              }
+              .sf-mockup .sf-global-search{
+                flex:1; background:rgba(255,255,255,0.12); color:#C7D2E0;
+                font-size:11px; padding:6px 12px; border-radius:4px; max-width:320px;
+              }
+              .sf-mockup .sf-global-icons{ display:flex; align-items:center; gap:14px; font-size:13px; color:#C7D2E0; }
+              .sf-mockup .sf-avatar{
+                width:22px; height:22px; border-radius:50%; background:#7E5D2F; color:#fff;
+                font-size:9px; font-weight:700; display:flex; align-items:center; justify-content:center;
+              }
+              .sf-mockup .sf-app-bar{
+                background:#F3F2F2; padding:10px 16px 0; border-bottom:1px solid #DDDBDA;
+              }
+              .sf-mockup .sf-app-name{ font-size:14px; font-weight:700; color:#032D60; display:block; margin-bottom:8px; }
+              .sf-mockup .sf-tabs{ display:flex; gap:20px; font-size:11.5px; color:#514F4D; }
+              .sf-mockup .sf-tabs span{ padding-bottom:9px; white-space:nowrap; }
+              .sf-mockup .sf-tabs span.active{ color:#032D60; font-weight:700; border-bottom:3px solid #0176D3; }
+              .sf-mockup .sf-breadcrumb{
+                font-size:10.5px; color:#706E6B; padding:8px 16px; background:#fff; border-bottom:1px solid #F0EFED;
+              }
+              .sf-mockup .sf-path{
+                display:flex; margin:14px 0 18px; border-radius:4px; overflow:hidden;
+                font-size:10px; font-weight:700;
+              }
+              .sf-mockup .sf-path span{
+                flex:1; text-align:center; padding:8px 4px; background:#DDDBDA; color:#514F4D;
+                position:relative; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+              }
+              .sf-mockup .sf-path span.done{ background:#0176D3; color:#fff; }
+              .sf-mockup .sf-path span.current{ background:#032D60; color:#fff; }
+              .sf-mockup .before-fields-grid{
+                display:grid; grid-template-columns:1fr 1fr; gap:10px;
+              }
+
+              @media (max-width:640px){
+                .sf-mockup .sf-tabs{ overflow-x:auto; gap:14px; }
+                .sf-mockup .sf-path span{ font-size:8.5px; padding:7px 2px; }
+                .sf-mockup .before-fields-grid{ grid-template-columns:1fr; }
+                .sf-mockup .sf-global-search{ display:none; }
+              }
+            </style>
+
+            <span class="ba-label before">Before · Unbranded Salesforce Lightning</span>
+            <div class="sf-window sf-desktop">
+              <!-- Salesforce global header -->
+              <div class="sf-global-header">
+                <div class="sf-launcher">⁛⁛⁛</div>
+                <div class="sf-global-search">🔍 Search Salesforce</div>
+                <div class="sf-global-icons">
+                  <span>⚙</span><span>🔔</span>
+                  <span class="sf-avatar">JW</span>
+                </div>
+              </div>
+              <!-- App tab bar -->
+              <div class="sf-app-bar">
+                <span class="sf-app-name">Advisor Console</span>
+                <div class="sf-tabs">
+                  <span>Home</span><span>Accounts</span><span>Opportunities</span>
+                  <span class="active">New Account Application</span><span>Reports</span>
+                </div>
+              </div>
+              <div class="sf-breadcrumb">Home &nbsp;›&nbsp; Opportunities &nbsp;›&nbsp; New Account Application</div>
+
+              <div class="before-body">
+                <div class="before-title">New IRA Account · J. Whitfield</div>
+                <div class="before-step">Guided Process &nbsp;·&nbsp; Step 3 of 7, Account Type &amp; Beneficiaries</div>
+
+                <!-- Salesforce Path component -->
+                <div class="sf-path">
+                  <span class="done">1. Client Info</span>
+                  <span class="done">2. Account Setup</span>
+                  <span class="current">3. Type &amp; Beneficiaries</span>
+                  <span>4. Funding</span>
+                  <span>5. Disclosures</span>
+                  <span>6. Review</span>
+                  <span>7. Signature</span>
+                </div>
+
+                <div class="before-fields-grid">
+                  <div class="before-field"><span class="fl">Account Type</span>Traditional IRA</div>
+                  <div class="before-field"><span class="fl">Primary Beneficiary</span>Spouse, 100%</div>
+                  <div class="before-field"><span class="fl">Contribution Source</span>Rollover from 401(k)</div>
+                  <div class="before-field"><span class="fl">Contingent Beneficiary</span>Not yet specified</div>
+                </div>
+                <div class="before-btn">Save &amp; Continue to Step 4</div>
+                <div class="before-note">7 steps total, client must visit branch in person to wet-sign at completion</div>
+              </div>
+            </div>
+            <p class="ba-caption">Generic Salesforce Lightning shell, no brand identity, no e-sign path, seven-step application headed toward a wet signature.</p>
+
+            <span class="ba-label after" style="margin-top:36px; display:inline-block;">After · Wells Fargo Wealth Management</span>
+            <div class="sf-window">
+              <div class="sf-titlebar">
+                <div class="sf-dot"></div><div class="sf-dot"></div><div class="sf-dot"></div>
+                <div class="sf-urlbar">onewim.wellsfargo.com</div>
+              </div>
+              <div class="after-nav">WELLS FARGO ADVISORS</div>
+              <div class="after-body">
+                <div class="after-title">Client Agreement · J. Whitfield</div>
+                <div class="after-sub">OneWIM · Advisor Workspace</div>
+                <div class="after-status">Ready for E-Signature</div>
+                <div class="after-field"><span class="fl">Document Type</span>Investment Advisory Agreement</div>
+                <div class="after-field"><span class="fl">Next Step</span>Send securely for e-signature</div>
+                <div class="sf-error-example">
+                  <span class="err-icon">⚠</span>
+                  <div>
+                    <div class="err-title">Client email not on file</div>
+                    <div class="err-body">Add a verified email before sending, this is required to deliver the secure e-signature request.</div>
+                  </div>
+                </div>
+                <div class="sf-help-example">
+                  <span class="help-icon">?</span>
+                  <span class="help-body">E-signature requests expire after 7 days. The client will receive a reminder after 3 days of inactivity.</span>
+                </div>
+                <div class="after-btn">Send for E-Signature</div>
+              </div>
+            </div>
+            <p class="ba-caption">On-brand, WCAG-compliant, e-sign enabled, advisor sends in one click.</p>
+
+            <div style="display:flex; justify-content:center; margin-top:36px;">
+              <div style="text-align:center; max-width:280px;">
+                <span class="ba-label after" style="margin-bottom:14px;">Client Experience · Mobile</span>
+                <div style="background:#1B1B1B; border-radius:32px; padding:10px; box-shadow:0 20px 50px -20px rgba(0,0,0,0.4);">
+                  <div style="background:#F8F6F1; border-radius:24px; overflow:hidden;">
+                    <div style="background:#7E5D2F; padding:14px 16px 10px; display:flex; align-items:center; justify-content:space-between;">
+                      <span style="color:#fff; font-weight:800; font-size:13px; text-shadow:0 1px 2px rgba(0,0,0,0.25);">Wells Fargo</span>
+                      <span style="color:#fff; font-size:10px; opacity:.9;">9:41</span>
+                    </div>
+                    <div style="padding:24px 16px 28px; text-align:left;">
+                      <div style="width:40px; height:40px; border-radius:50%; background:rgba(255,205,65,0.18); display:flex; align-items:center; justify-content:center; margin-bottom:14px; font-size:18px;">📄</div>
+                      <div style="font-size:14px; font-weight:800; color:#1B1B1B; margin-bottom:6px;">Documents ready to sign</div>
+                      <div style="font-size:12px; color:#59544C; line-height:1.5; margin-bottom:18px;">Your advisor has sent your Investment Advisory Agreement for secure e-signature. No office visit required.</div>
+                      <div style="background:#1B1B1B; color:#C9A15F; font-size:12px; font-weight:700; padding:11px; border-radius:8px; text-align:center;">Review &amp; Sign</div>
+                    </div>
+                  </div>
+                </div>
+                <p class="ba-caption">Wet-signature office visits replaced with a secure, brand-consistent e-sign notification.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pb-block">
+        <div class="pb-num">04</div>
+        <div class="pb-content">
+          <h2>Designing for accessibility (WCAG)</h2>
+          <p>Accessibility wasn't treated as a compliance checkbox added at the end; it was built into the process from day one. Every component was evaluated against WCAG standards for contrast, keyboard navigation, and screen reader compatibility as it was designed, not retrofitted after visual design was "final."</p>
+          <p>This mattered especially given the platform's user base: advisors span a wide range of ages, abilities, and working environments, and an inaccessible tool would have simply reproduced the same exclusionary friction OneWIM was meant to eliminate.</p>
+          <p>Designing for accessibility up front also paid off downstream. During the six-week sprint itself, engineering wasn't building the product yet; their role was iterative feedback, confirming that what we were designing was something they could feasibly build once the project was funded. But because accessibility was baked into the prototype from day one rather than treated as a later checklist item, it was already solved by the time funding was approved. When the scrum teams stood up to build the real thing, accessibility wasn't a phase they had to circle back for; it had already been checked off, which meant it never became a drag on that later development timeline.</p>
+        </div>
+      </div>
+
+      <div class="pb-block">
+        <div class="pb-num">05</div>
+        <div class="pb-content">
+          <h2>Process &amp; collaboration</h2>
+          <p>The six-week sprint moved fast by necessity, but not at the expense of rigor. I partnered closely with product, engineering, brand, accessibility, and compliance stakeholders throughout, running iterative prototype reviews rather than waiting for a single big reveal.</p>
+          <p>Early on, I set up a dedicated Confluence space for the project, a single spot where everyone could contribute artifacts as they were produced. It also gave advisors direct visibility into our progress, meeting notes, and a place to upload anything they thought we might need, without requiring them to learn Jira or Kanban boards they weren't used to working in. Rather than bogging down stakeholders who lived outside our day-to-day design and engineering tools, the Confluence space met them where they already were, which kept collaboration moving instead of becoming another barrier on an already tight timeline.</p>
+          <p>Rather than wait until the end to gather feedback, we started every-other-day check-ins beginning in week four, on Mondays, Wednesdays, and Fridays. Each session, we'd upload the latest version of the prototype to Confluence and open a dedicated space for feedback, giving stakeholders, our advisor pool, our accessibility team, and other peers a standing opportunity to check in on the end-to-end prototype's progress and weigh in directly. We kept that cadence running until three days before we wrapped the final, ready prototype, giving us just enough runway to incorporate that last round of feedback without jeopardizing the deadline.</p>
+          <p>Our advisor pool wasn't something we assembled ourselves; it was a group of 10 advisors selected from across the enterprise, already established before our team was brought onto the project. They functioned as subject matter experts throughout, giving us incremental, real-world feedback as the prototype evolved rather than waiting to weigh in only at the very end.</p>
+
+          <div class="tools-used" style="margin-top:28px;">
+            <div class="tile-label">Tools used</div>
+            <div class="tools-row">
+              <div class="tool-chip"><span style="font-size:16px;">☁️</span><span>Salesforce</span></div>
+              <div class="tool-chip"><img src="figma-logo.png" alt="Figma"><span>Figma</span></div>
+              <div class="tool-chip"><img src="jira-logo.png" alt="Jira"><span>Jira</span></div>
+              <div class="tool-chip"><img src="confluence-logo.png" alt="Confluence"><span>Confluence</span></div>
+              <div class="tool-chip"><span style="font-size:16px;">📋</span><span>Kanban</span></div>
+              <div class="tool-chip"><span style="font-size:16px;">🪧</span><span>FigJam</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pb-block">
+        <div class="pb-num">06</div>
+        <div class="pb-content">
+          <h2>Outcome</h2>
+          <div class="pull-tile" style="margin-top:0;">
+            <div class="tile-label">Results</div>
+            <p>Under my leadership, and alongside an incredibly stellar design team consisting of a content strategist, a product design prototyper, and accessibility SMEs, we delivered a board-ready, interactive, end-to-end prototype, fully compliant with brand and WCAG standards, built on the Salesforce Lightning foundation and in keeping with Wealth Investment Management's brand standards, complete with all content. Delivered in six weeks and grounded in real advisor research rather than assumption, it reflected roughly a <b><i>60%</i></b> improvement in time spent on the process, and <b><i>80%+</i></b> improvement in user satisfaction and ease, over the legacy Advisor Gateway experience, measured against our 10-advisor test group's completion times and post-session feedback.</p>
+          </div>
+          <p>The goal behind that completeness was intentional: if funding and approval were secured, we needed a prototype ready to hand directly to the assigned scrum teams, with nothing left to figure out. We shipped the end-to-end prototype to the Operating Committee at the end of that six-week window, and the outcome met the bar and then some. The prototype was met with high approval, two scrum teams were stood up, each comprised of a product designer, a content strategist lead, and a product lead, and the product shipped nine months later.</p>
+          <p>After that same OC demo, we also solicited final feedback from our 10-advisor test group, sending a formal survey to log and document their responses in FigJam. The goal was to have tangible, documented completion data and satisfaction feedback ready and waiting, so that if the Operating Committee approved funding, we'd already have the evidence in hand to hand off to the scrum teams alongside the prototype itself.</p>
+          <p>Just as important as the prototype itself was what it proved: that this kind of work didn't need to default to a vendor engagement. By capturing the effort internally, we kept institutional knowledge and technical capability inside the team rather than watching it walk out the door with an outside contractor when the engagement ended. That shift delivered real fiscal and efficiency gains alongside the design outcome: no vendor contract to renew, no ramp-up time re-explaining the business to someone new, and a team that could carry what it learned directly into the next project.</p>
+          <p>Feedback from our advisor pool was overwhelmingly positive. Only two of the ten advisors we tested with had any notable changes to request, and we were able to incorporate that feedback into future iterations alongside the scrum teams during the planning phase, rather than treating it as a blocker to shipping.</p>
+          <p>Beyond the metrics, OneWIM demonstrated that speed and rigor aren't mutually exclusive: a tight timeline can still produce a platform advisors trust, both in how it looks and in how it works for everyone who relies on it.</p>
+        </div>
+      </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="cs-nav">
+      <a href="index.html#work">← Back to featured work</a>
+      <a href="index.html#contact">Get in touch →</a>
+    </div>
+  </div>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-cta">
+        <h3>Turning complexity into clarity.</h3>
+      </div>
+      <div>
+        <p class="eyebrow" style="margin-bottom:12px;">Contact</p>
+        <ul class="footer-links">
+          <li><a href="https://www.linkedin.com/in/melberei26" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li><a href="Berei-Resume-2026.pdf" target="_blank" rel="noopener">Resume ↗</a></li>
+          <li><a href="tel:+17047283659">704-728-3659</a></li>
+          <li><a href="mailto:melb122@gmail.com">Email ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Marylynne Berei</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function() {
+    var nav = document.querySelector('.nav');
+    var isOpen = nav.classList.toggle('nav-open');
+    this.classList.toggle('open', isOpen);
+    this.setAttribute('aria-expanded', isOpen);
+  });
+</script>
+</body>
+</html>
